@@ -43,9 +43,9 @@ class lingkaran {
     int ruas, luas;
     int luasLingkaran(int ruas, int luas) {
         if (this.ruas % 7 == 0) {
-            this.luas = 22/7 * this.ruas * this.ruas;
+        this.luas = 22/7 * this.ruas * this.ruas;
         } else {
-            this.luas = (int) (3.14 * this.ruas * this.ruas);
+        this.luas = (int) (3.14 * this.ruas * this.ruas);
         }
         return this.luas;
     }
