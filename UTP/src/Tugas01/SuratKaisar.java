@@ -11,7 +11,7 @@ public class SuratKaisar {
     }
 
     static String suratKaiser(String text, int shift) {
-        String ciphertext = "";
+        String textBaru = "";
         char alphabet;
         for (int i = 0; i < text.length(); i++) {
             alphabet = text.charAt(i);
@@ -20,19 +20,19 @@ public class SuratKaisar {
                 if (alphabet > 'z') {
                     alphabet = (char) (alphabet + 'a' - 'z' - 1);
                 }
-                ciphertext = ciphertext + alphabet;
+                textBaru += alphabet;
             } else if (alphabet >= 'A' && alphabet <= 'Z') {
                 alphabet = (char) (alphabet + shift);
                 if (alphabet > 'Z') {
                     alphabet = (char) (alphabet + 'A' - 'Z' - 1);
                 }
-                ciphertext = ciphertext + alphabet;
+                textBaru += alphabet;
             } else {
-                ciphertext = ciphertext + alphabet;
+                textBaru += alphabet;
             }
 
         }
-        return ciphertext;
+        return textBaru;
     }
 }
 
